@@ -1,0 +1,160 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    color:black;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    background-color: white;
+}
+  
+a{
+    color: #B01B57;
+    text-decoration: none;
+}
+
+.kufiza{
+    background-color: white;
+    width: 83%;
+    height: 500px;
+    margin: 100px 5%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 50px 50px;
+    justify-content: center;
+}
+
+.errors{
+    height:20px;
+    width:450px;
+    color:red;
+    background-color: rgb(247, 203, 203); 
+    margin-left:85px;
+  }
+  
+
+.center{
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-top:-30px;
+}
+
+.center h1{
+text-align: center;
+color:#B01B57;
+padding: 20px 0;
+border-bottom: 1px solid silver;
+}
+.center form{
+padding: 0 40px;
+box-sizing: border-box;
+}
+
+
+form .txt_field{
+position: relative;
+border-bottom: 2px solid #adadad;
+margin: 30px 0;
+}
+.txt_field input{
+width: 100%;
+padding: 0 5px;
+height: 40px;
+font-size: 16px;
+border: none;
+background: none;
+outline: none;
+}
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    }
+    .txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background:#B01B57;
+    transition: .5s;
+    }
+    .txt_field input:focus ~ label,
+    .txt_field input:valid ~ label{
+    top: -5px;
+    color: #B01B57;
+    }
+    .txt_field input:focus ~ span::before,
+    .txt_field input:valid ~ span::before{
+    width: 100%;
+    }
+
+
+    input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    border: 1px solid;
+    background:white;
+    font-size: 18px;
+    border:3px solid #B01B57;
+    color: #B01B57;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.5s;
+    }
+    input[type="submit"]:hover{
+    background-color:#B01B57;
+    color:white;
+    }
+
+    textarea{
+        max-width:  400px;
+         min-width: 400px;
+         max-height: 170px;
+         min-height: 170px;
+
+    }
+
+    @media only screen and (max-width: 768px) {
+        .kufiza {
+        margin-top: 200px;
+        width: 80%;
+        margin: 50px 5%;
+        padding: 30px;
+        margin-top: 170px;
+        }
+        
+        .center {
+        width: 90%;
+        }
+        
+        .center h1 {
+        font-size: 24px;
+        padding: 10px 0;
+        }
+        
+        .center form {
+        padding: 0 20px;
+        }
+        textarea{
+        max-width:  300px;
+        min-width: 300px;
+        }
+        }

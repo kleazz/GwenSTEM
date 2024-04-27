@@ -1,0 +1,280 @@
+html, body{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    color:black;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    background-color: white;
+}
+ 
+
+a{
+    color: #262626;
+    text-decoration: none;
+}
+
+
+#banner{
+    background-image: linear-gradient(#0b5,#B01B57  );
+    height: 1cm;
+    text-align: center;
+    margin-top: 1.7cm;
+    color: #f3f3ec;
+    padding-top:5px;
+}
+
+h3{
+    margin:0px;
+}
+
+#fotoPare{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 17cm;
+    background-color: white;
+    color: white;
+}
+
+#teksti{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 17cm; 
+    align-items: center;
+    margin-left: 40px;
+    font-size: 21px;
+    padding-top: 6cm;
+    color:black;
+}
+#teksti p{
+  margin-left: 4cm;
+  color: black;
+    font-size:60px;
+    font-weight: bold;
+}
+
+
+#foto{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* width: 100%; */
+    /* height: 20cm; */
+    /* width: 20cm; */
+    /* min-width: 300px; */
+    /* object-fit: contain; */
+    /* position: relative; */
+    top:15px;
+    margin-top: 85px;
+    width: 25cm;
+    height: 25cm
+
+    /* right:0px; */
+}
+
+#slideshow{
+    width: 70%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    margin:50px 15%;
+  }
+  
+.katrorat{
+    height:500px;
+    width:100%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.wr{
+    align-items:center;
+    justify-content:space-around;
+    height:13cm;
+    padding:10px;
+    display:flex;
+    flex-direction:initial;
+    background-color: white;
+}
+#rec{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    padding-top: 50px;
+    font-size: 20px;
+    color:#B01B57 ; 
+}
+.divs{
+    height: 10cm;
+    width: 7.5cm;
+    transition: transform .2s;
+}
+
+.divs:hover{
+    transform: scale(1.2);
+    cursor:pointer;
+}
+
+.tekstet{
+    text-align: center;
+    font-size: 15px;
+}
+
+.r{
+    height: 7.5cm;
+    width: 7.5cm;
+}
+
+#btn2{
+    margin:0px;
+    margin-left: auto;
+    width: 10cm;
+    height:50px;
+    border:0px;
+    background-color:white;
+    border: 3px solid #B01B57;
+    font-size:larger;
+    transition: all 0.5s;
+    cursor: pointer;
+    color:#B01B57;
+}
+
+#btn2 span {
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  
+#btn2 span:after {
+    content: '\00bb';
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+#btn2:hover span {
+    padding-right: 25px;
+  }
+  
+#btn2:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+#fotoFundit{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: 5%;
+    height: 620px;
+    margin-top: 5%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 100px;
+}
+
+#fotoFunditTxt{
+    width: 60%;
+    margin: 30px 20px;
+    padding: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#img{
+    width: 100%;
+    height: 620px;
+    margin-right: 200px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  #banner{
+    padding-top: 80px;
+  
+  }
+  #fotoPare {
+    flex-direction: column;
+    height: 17cm;
+  }
+  #teksti {
+    width: 100%;
+    height: 6cm;
+    margin-left: 0;
+    padding-top: 0.5cm;
+  }
+  #teksti p {
+    font-size: 28px;
+  }
+  #foto {
+    margin-left: 0;
+    margin-bottom: 30px;
+    height: 10cm;
+  }
+  #slideshow {
+    width: 100%;
+    margin: 20px 0;
+    height: 5cm;
+  }
+
+  .katrorat {
+    height: 5cm;
+  }
+  .wr{
+    display: flex;
+    flex-direction: row;
+  }
+  .divs {
+    width: 100%;
+    height: 200px;
+    margin: 10px 0;
+    padding-top: -100px;
+  }
+  .r {
+    height: 200px;
+    width: 100%;
+  }
+  #fotoFundit {
+    flex-direction: column;
+    height: auto;
+  }
+  #img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    border-radius: 0;
+  }
+  #fotoFunditTxt {
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px;
+    font-size: 16px;
+    text-align: left;
+  }
+  #fotoFunditTxt h1{
+  width: 85%;
+  }
+  #fotoFunditTxt p{
+    width: 87%;
+  }
+  #btn2 {
+    width: 90%;
+  }
+}
